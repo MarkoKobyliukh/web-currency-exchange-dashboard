@@ -1,0 +1,199 @@
+/* ---------- Palette ---------- */
+:root {
+  --ecb-blue: #3f75c0;
+  --ecb-dark: #003399;
+  --ecb-link: #2a6ebb;
+  --ecb-yellow: #ffee00;
+  --ecb-gray: #ececec;
+  --up: #00b300;
+  --down: #d9333f;
+}
+
+body {
+  background: #f4f6fa;
+  font-family: "Open Sans", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  color: #222;
+}
+
+/* ---------- Home hero ---------- */
+.hero {
+  background: var(--ecb-blue);
+  color: #fff;
+  padding: 3.2rem 1rem 6.5rem;
+}
+
+.hero-date {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero-line {
+  width: 70px;
+  height: 2px;
+  background: var(--ecb-yellow);
+  margin: 1.6rem auto;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.content-wrap {
+  margin-top: -4rem;
+  padding-bottom: 3rem;
+}
+
+.rates-card {
+  border: 0;
+  border-radius: 0;
+}
+
+/* ---------- Rates table ---------- */
+.rates-table thead th {
+  color: var(--ecb-dark);
+  font-weight: 500;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 1rem 0.75rem;
+}
+
+.rates-table tbody tr {
+  cursor: pointer;
+}
+
+.rates-table tbody td {
+  padding: 1rem 0.75rem;
+  color: var(--ecb-link);
+  font-size: 1.1rem;
+}
+
+.rates-table .flag {
+  width: 22px;
+  height: auto;
+  border: 1px solid #e3e3e3;
+  vertical-align: middle;
+}
+
+.rates-table .code {
+  font-weight: 500;
+  padding-left: 0.5rem;
+}
+
+.rates-table .trend-up {
+  color: var(--up);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.rates-table .trend-down {
+  color: var(--down);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.rates-table .trend-flat {
+  color: #999;
+}
+
+.rates-table .spot {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: var(--ecb-link);
+  stroke-width: 1.6;
+}
+
+.source-note {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ---------- Detail view ---------- */
+.detail-top {
+  background: #fff;
+}
+
+.detail-title {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.content-wrap-detail {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.content-wrap-detail .card {
+  border: 0;
+  border-radius: 0;
+}
+
+.summary-band {
+  background: var(--ecb-gray);
+}
+
+.summary-date {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.summary-rate {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ecb-dark);
+}
+
+.summary-rate .delta-up {
+  color: var(--up);
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}
+
+.summary-rate .delta-down {
+  color: var(--down);
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}
+
+.summary-period-title {
+  font-size: 0.95rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.stat-value {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.chart-wrap {
+  height: 420px;
+}
+
+.chart-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+
+.preset-btn {
+  min-width: 48px;
+}
+
+@media (max-width: 576px) {
+  .hero-date { font-size: 1.6rem; }
+  .chart-wrap { height: 320px; }
+}
