@@ -9,7 +9,7 @@
   'use strict';
 
   /* ------------------------------ Config ------------------------------ */
-  var NBU_URL = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange';
+  var NBU_URL = 'https://nbu-proxy.nbu-rates-proxy.workers.dev/NBUStatService/v1/statdirectory/exchange';
   var MAX_RANGE_DAYS = 366;
   var DEFAULT_RANGE_DAYS = 30;
 
